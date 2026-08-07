@@ -317,6 +317,53 @@
   </section>
 
   <section>
+    <span class="eyebrow">two more attempts</span>
+    <span class="verdict no">still no survivor</span>
+    <h2>A third project, two more real-data tests, same answer</h2>
+    <p>
+      <a href="https://github.com/JonathanReiser/quantum-geopolitics-research" target="_blank" rel="noopener">quantum-geopolitics-research</a>
+      pushed the entanglement question into real interstate conflict data,
+      to see if it fares any better outside speed dating.
+    </p>
+    <p>
+      <strong>Attempt 1 &mdash; militarized disputes (MID, 1816&ndash;2014):</strong>
+      Side A's and Side B's hostility levels in the same dispute correlate
+      hugely (r&nbsp;=&nbsp;+0.27, p&nbsp;=&nbsp;10&#8315;&sup3;&#8309;) &mdash;
+      but the test itself turned out to be invalid, not just unsupportive:
+      a militarized dispute is one mutually-escalating interactive event by
+      definition (confirmed via the dataset's own dispute-level hostility
+      field), so the two sides' hostility levels are two views of one
+      process, not two independent private decisions. A classical
+      tit-for-tat model predicts this same correlation with zero
+      entanglement needed.
+    </p>
+    <p>
+      <strong>Attempt 2 &mdash; UN General Assembly votes (1946&ndash;2020),
+      fixed the flaw:</strong> votes are cast independently, a structurally
+      valid analog to the dating study's private scorecards. Pooled across
+      10 real rival dyads (India-Pakistan, Iran-Israel, Russia-Ukraine, and
+      seven more), the residual correlation is real
+      (r&nbsp;=&nbsp;+0.13, p&nbsp;=&nbsp;10&#8315;&sup1;&#8311;&#8304;) &mdash;
+      but every single one of the 10 dyads' sign matched "same
+      regional/ideological bloc &rarr; positive, opposing bloc &rarr;
+      negative" exactly, checked against bloc membership decided before
+      looking at the results. That's the signature of ordinary,
+      well-documented bloc-voting alignment, not a dyad-specific entangled
+      relationship.
+    </p>
+    <p>
+      <strong>Order effects, meanwhile, keep showing up.</strong> A state's
+      hostility in its previous dispute predicts its current one, once you
+      control for each state's own stable belligerence level (the
+      geopolitical version of the dating study's "own leniency" fix)
+      &mdash; and the effect is strongest exactly where a real contrast
+      effect should be strongest: disputes within 5 years of each other
+      (p&nbsp;=&nbsp;0.020), fading for more distant ones. A third
+      independent domain, same pattern.
+    </p>
+  </section>
+
+  <section>
     <span class="eyebrow">side by side</span>
     <h2>Every claim, what tested it, what happened</h2>
     <div class="table-wrap">
@@ -349,6 +396,24 @@
             <td>Real dyads, deduped + session FE + formal APIM</td>
             <td class="status-no">Not supported</td>
           </tr>
+          <tr>
+            <td class="domain">geopolitics</td>
+            <td>Previous dispute's hostility shifts the current one</td>
+            <td>Real MID conflict data (1816&ndash;2014), state + decade FE, recency-restricted</td>
+            <td class="status-yes">Confirmed, modest</td>
+          </tr>
+          <tr>
+            <td class="domain">geopolitics</td>
+            <td>Two sides' hostility in one dispute is non-separable</td>
+            <td>Real MID data &mdash; but hostlev_a/hostlev_b are one interactive event, not two private decisions</td>
+            <td class="status-mixed">Test invalid as designed</td>
+          </tr>
+          <tr>
+            <td class="domain">geopolitics</td>
+            <td>Two rival states' independent decisions are non-separable</td>
+            <td>Real UN vote data, 10 rival dyads, world-mean + country + decade FE</td>
+            <td class="status-no">Bloc alignment explains it (10/10 sign match)</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -359,17 +424,35 @@
     <h2>What actually travels across domains</h2>
     <p>
       Order-dependence in judgment is the real, portable finding here &mdash;
-      confirmed as a working mechanism in one project and independently
-      confirmed as a property of real human decisions in the other.
+      confirmed as a working mechanism in governance-playground's own math,
+      and independently confirmed as a property of real human decisions
+      <em>twice more</em>: real speed dates, and now real interstate
+      disputes once you control for each state's stable belligerence level.
+      Three domains, same pattern, each time strongest for genuinely recent
+      prior events and fading for distant ones &mdash; exactly the shape a
+      real contrast effect should have.
+    </p>
+    <p>
       Entanglement is a legitimately useful way to <em>build</em> models of
-      coupled decision-makers, demonstrated to work exactly as designed
-      &mdash; but the one time it was tested as a direct empirical claim
-      against real, unmediated behavior, it wasn't there. Neither project
-      overclaims past what it actually checked, and put together they say
-      something sharper than either does alone: quantum cognition's
-      sequential/contextual mechanics are the part worth taking seriously
-      as a real property of decision-making; its entanglement mechanics are
-      the part worth treating as a modeling tool until tested otherwise.
+      coupled decision-makers, demonstrated to work exactly as designed in
+      governance-playground &mdash; but every time it's been tested as a
+      direct empirical claim against real, unmediated behavior, either it
+      wasn't there (real daters) or the test itself turned out to be
+      invalid (MID hostility levels, which are one interactive event, not
+      two private decisions) or a classical explanation was sitting right
+      in the data (UN votes, where every single rival dyad's sign matched
+      ordinary bloc alignment). Three real attempts, zero survivors, one
+      clean classical explanation each time it got close.
+    </p>
+    <p>
+      Neither project overclaims past what it actually checked, and put
+      together they say something sharper than any one of them alone:
+      quantum cognition's sequential/contextual mechanics are the part
+      worth taking seriously as a real property of decision-making across
+      domains; its entanglement mechanics are the part worth treating as a
+      modeling tool until it survives a fair, direct test against real
+      data &mdash; which hasn't happened yet, anywhere this project has
+      looked.
     </p>
   </section>
 
@@ -393,6 +476,16 @@
       <span class="k mono">interactive</span>
       <span class="t">Contrast Lab &rarr;</span>
       <span class="d">Try the one finding that survived, live</span>
+    </a>
+    <a class="link-card" href="https://github.com/JonathanReiser/quantum-dating-research" target="_blank" rel="noopener">
+      <span class="k mono">source</span>
+      <span class="t">quantum-dating-research &rarr;</span>
+      <span class="d">All three test scripts, the real speed-dating data, full FINDINGS.md</span>
+    </a>
+    <a class="link-card" href="https://github.com/JonathanReiser/quantum-geopolitics-research" target="_blank" rel="noopener">
+      <span class="k mono">source</span>
+      <span class="t">quantum-geopolitics-research &rarr;</span>
+      <span class="d">MID conflict data + UN vote data, both entanglement attempts, full FINDINGS.md</span>
     </a>
   </div>
 
