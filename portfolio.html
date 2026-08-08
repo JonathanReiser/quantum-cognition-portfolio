@@ -130,6 +130,7 @@
   }
   .split-cell .stat.violet { color: var(--violet); }
   .split-cell .stat.amber { color: var(--amber); }
+  .split-cell .stat.teal { color: var(--teal); }
   .split-cell .note { font-size: .82rem; color: var(--ink-soft); }
 
   .verdict {
@@ -185,7 +186,7 @@
 
 <div class="wrap">
   <div class="hero">
-    <span class="eyebrow">research portfolio — 2026-08-07</span>
+    <span class="eyebrow">research portfolio — updated 2026-08-08</span>
     <h1>Where Quantum Cognition Actually Holds Up</h1>
     <p class="dek">
       Two independent projects asked the same theoretical question in two
@@ -364,6 +365,78 @@
   </section>
 
   <section>
+    <span class="eyebrow">a fourth project, a different kind of answer</span>
+    <span class="verdict mixed">real, but not the claim being tested elsewhere</span>
+    <h2>Collective valuation: the first paired-outcome signal that survives</h2>
+    <p>
+      <span class="mono">collective-valuation-research</span> moved to a
+      fourth kind of data entirely: real Stack Exchange vote records
+      across four communities (Philosophy, Buddhism, Politics, Law),
+      testing whether two competing answers to the same question show
+      collective-valuation correlation beyond what ordinary voting
+      dynamics predict.
+    </p>
+    <p>
+      <strong>Five classical explanations tried and ruled out</strong> for
+      the signal that survives: vote momentum/exposure (calibrated
+      against real dispersion, not guessed), shared question popularity,
+      same-session co-voting (the mechanism that fully explained away two
+      of the four communities once modeled properly), correlated
+      answerer skill, and explicit answer cross-referencing.
+    </p>
+    <div class="split">
+      <div class="split-cell">
+        <span class="who mono">philosophy / buddhism SE</span>
+        <span class="stat teal">survives every control</span>
+        <span class="note">Confirmed two independent ways per community:
+          a calibrated session-aware classical null, and a model-free
+          structural test &mdash; questions where the two answers' votes
+          never shared a single calendar day, so same-session voting was
+          structurally impossible, not just controlled for.</span>
+      </div>
+      <div class="split-cell">
+        <span class="who mono">politics / law SE</span>
+        <span class="stat amber">explained by session voting (at first)</span>
+        <span class="note">Same signal appeared initially, fully explained
+          by same-session co-voting once modeled &mdash; matching this
+          project's own discipline in the dating and geopolitics work
+          above.</span>
+      </div>
+    </div>
+    <p>
+      The real story turned out sharper than &ldquo;some domains show it,
+      some don't.&rdquo; Splitting every community by real vote-margin
+      imbalance &mdash; how decisively the community differentiated the
+      two answers &mdash; found the entire signal concentrated in
+      close-margin questions, <strong>universally, across all four
+      communities</strong>: Philosophy (6.1&times; the calibrated null),
+      Buddhism (12.9&times;), Politics (2.1&times;), Law (2.1&times;).
+      Landslide questions show a deficit instead, not just an absence.
+      What looked like &ldquo;two domains have it, two don't&rdquo; was
+      actually &ldquo;all four have it, at different strengths&rdquo;
+      &mdash; caught by running the obvious follow-up test rather than
+      stopping at the aggregate result.
+    </p>
+    <div class="callout teal">
+      <p><strong>What this actually is:</strong> not evidence of quantum
+        entanglement in the physics sense. A qualitative read of the
+        highest-signal question pairs points at an ordinary, legible
+        mechanism instead: when a question has no demonstrably best
+        answer, both competing answers' fates become coupled in how the
+        community responds to them; when one answer is simply better,
+        they don't. Real, replicated, survives five confound checks
+        &mdash; and still the most carefully-caveated result in this body
+        of work, not the most dramatic one.</p>
+      <p><strong>The order-dependence thread does not extend here the
+        same way.</strong> The recency-restricted order effect from the
+        other three projects showed up in 3 of 4 communities, but tracks
+        each community's own vote-momentum strength, not the ambiguity
+        mechanism above &mdash; two separate findings under one roof,
+        not one unified signature.</p>
+    </div>
+  </section>
+
+  <section>
     <span class="eyebrow">side by side</span>
     <h2>Every claim, what tested it, what happened</h2>
     <div class="table-wrap">
@@ -414,6 +487,24 @@
             <td>Real UN vote data, 10 rival dyads, world-mean + country + decade FE</td>
             <td class="status-no">Bloc alignment explains it (10/10 sign match)</td>
           </tr>
+          <tr>
+            <td class="domain">valuation</td>
+            <td>Two competing answers' collective reception is non-separable</td>
+            <td>Real Stack Exchange votes, 4 communities, calibrated classical null + 5 confound controls</td>
+            <td class="status-yes">Survives &mdash; concentrated in ambiguous questions</td>
+          </tr>
+          <tr>
+            <td class="domain">valuation</td>
+            <td>Same-session co-voting explains the coupling</td>
+            <td>Session-aware modeled null + model-free zero-overlap structural test</td>
+            <td class="status-no">Ruled out on the two surviving communities</td>
+          </tr>
+          <tr>
+            <td class="domain">valuation</td>
+            <td>Sequential votes show order-dependence</td>
+            <td>Within-answer permutation null, recency-restricted, 4 communities</td>
+            <td class="status-mixed">3 of 4, tracks momentum not ambiguity</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -451,8 +542,27 @@
       worth taking seriously as a real property of decision-making across
       domains; its entanglement mechanics are the part worth treating as a
       modeling tool until it survives a fair, direct test against real
-      data &mdash; which hasn't happened yet, anywhere this project has
-      looked.
+      data.
+    </p>
+    <p>
+      <strong>A fourth attempt, in a different kind of domain entirely
+      (collective valuation rather than dyadic decision-making), finally
+      found something that survives &mdash; and it's worth being precise
+      about what that is.</strong> It isn't literal quantum entanglement.
+      It's a real, replicated pattern where two competing answers'
+      collective reception becomes coupled specifically when a question
+      has no clear best answer, and decouples when one answer is simply
+      better. That's a narrower, more mechanistically legible claim than
+      the pairwise non-separability the first three attempts kept failing
+      to confirm &mdash; it shares entanglement's basic shape (paired
+      outcomes correlated beyond independence) without needing anything
+      resembling quantum formalism to explain it. Four real attempts now:
+      order-dependence keeps replicating as a genuine property of
+      judgment across domains that use it; strict pairwise entanglement
+      between two decision-makers keeps failing; and a specific,
+      ambiguity-gated version of coupled valuation is the first thing in
+      this body of work to survive real, adversarial testing, in
+      appropriately reframed form.
     </p>
   </section>
 
