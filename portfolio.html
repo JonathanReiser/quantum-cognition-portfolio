@@ -186,14 +186,14 @@
 
 <div class="wrap">
   <div class="hero">
-    <span class="eyebrow">research portfolio — updated 2026-08-08</span>
+    <span class="eyebrow">research portfolio — updated 2026-08-23</span>
     <h1>Where Quantum Cognition Actually Holds Up</h1>
     <p class="dek">
-      Two independent projects asked the same theoretical question in two
-      completely different ways: <strong>build a model and check the
-      mechanism works, or skip the model and test the raw claim against
-      real behavior.</strong> Put side by side, they disagree in an
-      interesting, informative way.
+      Five projects asked the same theoretical question against real behavioural
+      data &mdash; speed dating, interstate conflict, UN votes, Stack Exchange, and
+      835K DAO governance votes. <strong>Order effects replicate everywhere. The one
+      prediction that would actually distinguish quantum cognition from ordinary
+      psychology fails by a factor of 6&ndash;8.</strong>
     </p>
   </div>
 
@@ -447,6 +447,70 @@
   </section>
 
   <section>
+    <span class="eyebrow">the decisive test</span>
+    <span class="verdict no">the one precise prediction fails</span>
+    <h2>DAO governance: quantum cognition's only parameter-free prediction, refuted</h2>
+    <p>
+      Everything above shares a weakness worth naming. Order effects are
+      <em>consistent</em> with quantum-cognition models &mdash; but anchoring, mood
+      carryover and consistency motivation all predict them too. So none of the
+      first four projects could actually <em>discriminate</em> between quantum and
+      ordinary psychological explanations. They kept landing on "real effect,
+      classical explanation available."
+    </p>
+    <p>
+      <strong>The QQ equality</strong> (Wang &amp; Busemeyer 2013, PNAS) is the
+      exception, and the reason this fifth project exists. For two binary questions
+      asked in both orders, quantum projection implies the total probability of
+      <em>disagreeing</em> answers must be identical whichever order you ask &mdash;
+      exactly, with <em>nothing fitted</em>. It held across 70+ national surveys.
+      It is the one prediction in this literature that can straightforwardly come
+      out wrong.
+    </p>
+    <p>
+      Real DAO governance turns out to be an unusually good place to test it:
+      voters choose their own order among simultaneously-open proposals, so both
+      orders occur naturally. <span class="mono">dao-governance-research</span>
+      tested it on <strong>1,006 proposal pairs with overlapping voting windows,
+      2.2M dual-voter observations</strong>, across Arbitrum, Optimism, Gitcoin,
+      ENS and Balancer.
+    </p>
+    <div class="split">
+      <div class="split-cell">
+        <span class="who mono">what quantum predicts</span>
+        <span class="stat violet">sd(z) = 1.0&nbsp;&nbsp;|&nbsp;&nbsp;5% significant</span>
+        <span class="note">Under the QQ equality, each pair's q should sit at zero
+          within sampling error, so standardised z is a unit normal.</span>
+      </div>
+      <div class="split-cell">
+        <span class="who mono">what real DAO votes do</span>
+        <span class="stat amber">sd(z) = 6.87&nbsp;&nbsp;|&nbsp;&nbsp;57% significant</span>
+        <span class="note">|q| runs 6&ndash;8&times; sampling noise &mdash; and gets
+          <em>worse</em> on the best-measured pairs (sd(z)=8.21), the wrong direction
+          for a noise artifact.</span>
+      </div>
+    </div>
+    <p>
+      <strong>Both fair defences were tested and neither holds.</strong> Order is
+      self-selected here rather than randomised, and the pre-registered balance
+      check did fail &mdash; but stratifying within each pair on tenure &times;
+      baseline-support quartiles removes most of the systematic <em>sign</em>
+      (mean z +2.33 &rarr; +0.58) while barely touching <em>magnitude</em> (6.87 &rarr;
+      6.03). And QQ was validated on survey items answered seconds apart, so the fair
+      objection is that DAO votes days apart carry new information &mdash; but it
+      fails in every gap bucket, including votes cast under a minute apart
+      (sd(z)=6.40), where nothing could have intervened.
+    </p>
+    <div class="callout violet">
+      <p><strong>The test was substantive, not trivially satisfied.</strong> Order
+        effects genuinely exist in this data (support for a proposal differs by
+        whether it was voted first or second, t=&minus;5.35), so q=0 would have been
+        a real confirmation. A prior of ~30% that QQ would hold was recorded in git
+        before anything was computed.</p>
+    </div>
+  </section>
+
+  <section>
     <span class="eyebrow">side by side</span>
     <h2>Every claim, what tested it, what happened</h2>
     <div class="table-wrap">
@@ -515,6 +579,18 @@
             <td>Within-answer permutation null, recency-restricted, 4 communities</td>
             <td class="status-mixed">3 of 4, tracks momentum not ambiguity</td>
           </tr>
+          <tr>
+            <td class="domain">DAO governance</td>
+            <td>Voters show order-dependence from their own last vote</td>
+            <td>835K real Snapshot votes; permutation null immune to Nickell bias; drift and topical-adjacency confounds ruled out by lag structure and time decay</td>
+            <td class="status-mixed">Real, decays to zero by 90 days &mdash; but largely one DAO</td>
+          </tr>
+          <tr>
+            <td class="domain">DAO governance</td>
+            <td><strong>QQ equality</strong> &mdash; the parameter-free quantum prediction</td>
+            <td>1,006 proposal pairs with overlapping windows, 2.2M dual-voter observations; stratified on voter observables; split by gap between votes</td>
+            <td class="status-no"><strong>Fails 6&ndash;8&times;</strong> (sd(z)=6.87 vs 1.0 predicted)</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -566,13 +642,41 @@
       the pairwise non-separability the first three attempts kept failing
       to confirm &mdash; it shares entanglement's basic shape (paired
       outcomes correlated beyond independence) without needing anything
-      resembling quantum formalism to explain it. Four real attempts now:
-      order-dependence keeps replicating as a genuine property of
-      judgment across domains that use it; strict pairwise entanglement
-      between two decision-makers keeps failing; and a specific,
-      ambiguity-gated version of coupled valuation is the first thing in
-      this body of work to survive real, adversarial testing, in
-      appropriately reframed form.
+      resembling quantum formalism to explain it.
+    </p>
+    <div class="callout violet">
+      <p><strong>The fifth project changes what this body of work can
+        conclude.</strong> Until DAO governance, every result here was
+        compatible with quantum cognition <em>and</em> with ordinary
+        psychology &mdash; which meant none of them could settle anything.
+        "We looked for entanglement and didn't find it" is weak evidence.
+        <em>"The one thing this theory uniquely and precisely predicts is
+        violated by a factor of 6&ndash;8, and neither selection nor
+        intervening information explains it"</em> is a finding.</p>
+    </div>
+    <p>
+      <strong>Net position across five real-data domains.</strong>
+      Order-dependence keeps replicating as a genuine property of judgment
+      wherever it's properly tested. Strict pairwise entanglement between two
+      decision-makers has never survived a fair direct test. A specific,
+      ambiguity-gated version of coupled valuation does survive, in
+      appropriately reframed form. And the single parameter-free prediction
+      that would distinguish quantum-cognition models from classical
+      probability fails decisively on real, consequential, financially
+      material decisions. Taken together this points toward ordinary
+      sequential-judgment psychology &mdash; anchoring, carryover, contrast
+      &mdash; rather than quantum structure in human decision-making.
+    </p>
+    <p>
+      <strong>One clarification worth making explicit, since the vocabulary
+      invites confusion.</strong> "Quantum cognition" involves no quantum
+      physics. It is a school of mathematical psychology that borrows the
+      <em>formalism</em> of quantum probability because human judgment
+      demonstrably violates classical probability axioms; nobody in it claims
+      neurons are doing quantum mechanics. That is a separate matter from
+      governance-playground's use of actual <em>quantum computing</em> hardware
+      to perform its collapse &mdash; genuine qubits on a real IBM processor.
+      The two share a word and a mathematical formalism, not a subject.
     </p>
   </section>
 
@@ -607,6 +711,11 @@
       <span class="t">quantum-geopolitics-research &rarr;</span>
       <span class="d">MID conflict data + UN vote data, both entanglement attempts, full FINDINGS.md</span>
     </a>
+    <a class="link-card" href="https://github.com/JonathanReiser/dao-governance-research" target="_blank" rel="noopener">
+      <span class="k mono">source</span>
+      <span class="t">dao-governance-research &rarr;</span>
+      <span class="d">835K real DAO votes: the QQ-equality refutation, plus how DAOs actually vote</span>
+    </a>
   </div>
 
   <footer>
@@ -616,8 +725,10 @@
       <div>Busemeyer, J. R., Wang, Z., &amp; Townsend, J. T. (2006). Quantum dynamics of human decision-making. <em>Journal of Mathematical Psychology.</em></div>
       <div>Fisman, R., Iyengar, S. S., Kamenica, E., &amp; Simonson, I. (2006). Gender Differences in Mate Selection: Evidence From a Speed Dating Experiment. <em>Quarterly Journal of Economics.</em></div>
       <div>Bhargava, S., &amp; Fisman, R. (2012). Contrast Effects in Sequential Decisions: Evidence from Speed Dating. Working paper.</div>
+      <div>Wang, Z., &amp; Busemeyer, J. R. (2013). A quantum question order model supported by empirical tests of an a priori and precise prediction. <em>Topics in Cognitive Science</em>; and Wang, Solloway, Shiffrin &amp; Busemeyer (2014), <em>PNAS</em> 111(26).</div>
     </div>
-    <p style="margin:0;">Independent research. Two separate projects, compared honestly &mdash;
-      neither claim is stretched past what its own evidence supports.</p>
+    <p style="margin:0;">Independent research. Five projects, compared honestly &mdash;
+      no claim is stretched past what its own evidence supports, and the negative
+      results are reported as prominently as the positive ones.</p>
   </footer>
 </div>
