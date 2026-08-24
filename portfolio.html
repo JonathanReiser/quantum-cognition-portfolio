@@ -150,6 +150,7 @@
   }
   .callout.violet { border-left-color: var(--violet-bg); }
   .callout.teal { border-left-color: var(--teal-bg); }
+  .callout.amber { border-left-color: var(--amber-bg); }
   .callout p { margin: 0; }
   .callout p + p { margin-top: .6rem; }
   .callout strong { color: var(--ink); }
@@ -219,8 +220,8 @@
 
   <section>
     <span class="eyebrow">the throughline</span>
-    <span class="verdict yes">holds up in both, independently</span>
-    <h2>Order-dependence is the strongest thread</h2>
+    <span class="verdict mixed">replicates everywhere &mdash; and is tiny</span>
+    <h2>Order-dependence is the strongest thread, for what that is worth</h2>
     <p>
       In the simulation, cycle-to-cycle belief evolution is explicitly
       non-commutative &mdash; the fixed iran&rarr;israel&rarr;saudi
@@ -251,8 +252,25 @@
     </div>
     <p>One is a verified property of a designed model; the other is a
       directly-tested, twice-replicated property of real human decisions.
-      Together they're the strongest piece of evidence in this whole body
-      of work &mdash; sequential context genuinely reshapes judgment.</p>
+      Sequential context genuinely reshapes judgment, and this is the one
+      claim here that has replicated everywhere it was properly tested.</p>
+    <div class="callout amber">
+      <p><strong>But "replicates" is not "matters," and that distinction
+        was tested rather than assumed.</strong> In DAO governance the order
+        effect was put to an out-of-sample predictive test &mdash; strict
+        temporal split, 150,349 held-out votes, no leakage. Knowing a voter's
+        last vote, on top of their long-run tendency and the live tally,
+        improved log loss by <strong>0.42%</strong>: accuracy moved 91.96%
+        &rarr; 91.99%, AUC 0.884 &rarr; 0.885. On the voters who genuinely
+        vary, AUC actually <em>declined</em> slightly while log loss improved
+        &mdash; it nudges calibration without improving ranking at all.</p>
+      <p>So the strongest surviving claim in this body of work is
+        <em>real, replicated, confound-survived, and practically negligible</em>
+        wherever its usefulness has been measured. Statistical significance
+        answers "is this non-zero"; at hundreds of thousands of observations
+        that is a very low bar, and it says nothing about whether an effect is
+        large enough to act on. Most findings never get this second test.</p>
+    </div>
   </section>
 
   <section>
@@ -591,6 +609,18 @@
           </tr>
           <tr>
             <td class="domain">DAO governance</td>
+            <td>Is the order effect <em>useful</em>, not merely significant?</td>
+            <td>Out-of-sample prediction, strict temporal split, 150,349 held-out votes, no leakage</td>
+            <td class="status-no">Real but negligible &mdash; +0.42% log loss</td>
+          </tr>
+          <tr>
+            <td class="domain">DAO governance</td>
+            <td>Does the visible tally <em>cause</em> votes (herding)?</td>
+            <td>Tally-seen vs votes-after as a noise instrument; proposal + voter FE; backwards-in-time placebo</td>
+            <td class="status-no">No &mdash; 88% is proposal quality; placebo exceeds the effect</td>
+          </tr>
+          <tr>
+            <td class="domain">DAO governance</td>
             <td><strong>QQ equality</strong> &mdash; the parameter-free quantum prediction</td>
             <td>1,006 proposal pairs with overlapping windows, 2.2M dual-voter observations; stratified on voter observables; split by gap between votes</td>
             <td class="status-no"><strong>Fails 4&ndash;8&times;</strong> (sd(z)=6.87 vs 1.0 predicted; 5.59 with order forced by calendar)</td>
@@ -662,7 +692,8 @@
     <p>
       <strong>Net position across five real-data domains.</strong>
       Order-dependence keeps replicating as a genuine property of judgment
-      wherever it's properly tested. Strict pairwise entanglement between two
+      wherever it's properly tested &mdash; though where its practical value
+      has been measured, it is worth about half a percent. Strict pairwise entanglement between two
       decision-makers has never survived a fair direct test. A specific,
       ambiguity-gated version of coupled valuation does survive, in
       appropriately reframed form. And the single parameter-free prediction
