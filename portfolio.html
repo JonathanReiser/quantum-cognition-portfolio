@@ -485,21 +485,25 @@
       <div class="split-cell">
         <span class="who mono">what real DAO votes do</span>
         <span class="stat amber">sd(z) = 6.87&nbsp;&nbsp;|&nbsp;&nbsp;57% significant</span>
-        <span class="note">|q| runs 6&ndash;8&times; sampling noise &mdash; and gets
+        <span class="note">|q| runs 4&ndash;8&times; sampling noise &mdash; and gets
           <em>worse</em> on the best-measured pairs (sd(z)=8.21), the wrong direction
-          for a noise artifact.</span>
+          for a noise artifact. Survives propensity weighting (4.15) and a
+          calendar-forced-order quasi-experiment (5.59).</span>
       </div>
     </div>
     <p>
       <strong>Both fair defences were tested and neither holds.</strong> Order is
-      self-selected here rather than randomised, and the pre-registered balance
-      check did fail &mdash; but stratifying within each pair on tenure &times;
-      baseline-support quartiles removes most of the systematic <em>sign</em>
-      (mean z +2.33 &rarr; +0.58) while barely touching <em>magnitude</em> (6.87 &rarr;
-      6.03). And QQ was validated on survey items answered seconds apart, so the fair
-      objection is that DAO votes days apart carry new information &mdash; but it
-      fails in every gap bucket, including votes cast under a minute apart
-      (sd(z)=6.40), where nothing could have intervened.
+      self-selected here rather than randomised &mdash; the obvious objection, and the
+      pre-registered balance check did fail. Pushed on two ways: propensity-score
+      weighting on voter covariates cuts sd(z) from 6.87 to <strong>4.15</strong>
+      (observable selection <em>is</em> doing real work &mdash; roughly 40% of the
+      inflation), and for pairs whose second proposal opened later, voters who voted
+      before it existed had their order <strong>fixed by the calendar rather than
+      chosen</strong> &mdash; among those, sd(z) is still <strong>5.59</strong>. And
+      QQ was validated on survey items answered seconds apart, so the fair objection is
+      that DAO votes days apart carry new information &mdash; but it fails in every gap
+      bucket, including votes cast under a minute apart (sd(z)=6.40), where nothing
+      could have intervened.
     </p>
     <div class="callout violet">
       <p><strong>The test was substantive, not trivially satisfied.</strong> Order
@@ -589,7 +593,7 @@
             <td class="domain">DAO governance</td>
             <td><strong>QQ equality</strong> &mdash; the parameter-free quantum prediction</td>
             <td>1,006 proposal pairs with overlapping windows, 2.2M dual-voter observations; stratified on voter observables; split by gap between votes</td>
-            <td class="status-no"><strong>Fails 6&ndash;8&times;</strong> (sd(z)=6.87 vs 1.0 predicted)</td>
+            <td class="status-no"><strong>Fails 4&ndash;8&times;</strong> (sd(z)=6.87 vs 1.0 predicted; 5.59 with order forced by calendar)</td>
           </tr>
         </tbody>
       </table>
@@ -651,8 +655,9 @@
         psychology &mdash; which meant none of them could settle anything.
         "We looked for entanglement and didn't find it" is weak evidence.
         <em>"The one thing this theory uniquely and precisely predicts is
-        violated by a factor of 6&ndash;8, and neither selection nor
-        intervening information explains it"</em> is a finding.</p>
+        violated by a factor of 4&ndash;8, and survives both a propensity-weighted
+        design and a quasi-experiment where the order was fixed by the calendar
+        rather than chosen"</em> is a finding.</p>
     </div>
     <p>
       <strong>Net position across five real-data domains.</strong>
